@@ -651,7 +651,7 @@
 		
 						header.fixed_hiding .q_logo a,
 				header.fixed_hiding .q_logo{
-				max-height: 59px;
+				max-height: 40px;
 				}
 				
 		
@@ -670,8 +670,8 @@
 			.header_top .right #lang_sel ul ul,
 			.drop_down .wide .second ul li.show_widget_area_in_popup .widget,
 			.drop_down .wide.wide_background .second{
-			background-color: #ffffff;
-			background-color: rgba(255,255,255,1);
+			background-color: #8cc63f;
+			background-color: rgba(140,198,63,1);
 			}
 
 		
@@ -704,7 +704,34 @@
 
 		
 
-																		
+					.drop_down .second .inner > ul > li > a,
+			.drop_down .second .inner > ul > li > h3,
+			.drop_down .wide .second .inner > ul > li > h3,
+			.drop_down .wide .second .inner > ul > li > a,
+			.drop_down .wide .second ul li ul li.menu-item-has-children > a,
+			.drop_down .wide .second .inner ul li.sub ul li.menu-item-has-children > a,
+			.drop_down .wide .second .inner > ul li.sub .flexslider ul li  h5 a,
+			.drop_down .wide .second .inner > ul li .flexslider ul li  h5 a,
+			.drop_down .wide .second .inner > ul li.sub .flexslider ul li  h5,
+			.drop_down .wide .second .inner > ul li .flexslider ul li  h5,
+			.header_top #lang_sel ul li ul li a {
+			 color: #ffffff; 																								}
+							.drop_down .second .inner > ul > li > a:hover,
+			.drop_down .wide .second ul li ul li.menu-item-has-children > a:hover,
+			.drop_down .wide .second .inner ul li.sub ul li.menu-item-has-children > a:hover{
+			color: #c7e2a1 !important;
+			}
+									.drop_down .second ul li{
+			border-bottom-style:solid;
+			}
+			li.narrow .second .inner ul{
+			padding-top:0;
+			padding-bottom:0;
+			}
+			.drop_down .second .inner ul li ul{
+			top:0;
+			}
+												
 
 						
 		

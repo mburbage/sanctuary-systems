@@ -9,3 +9,38 @@ Template: bridge
 */
 @import url("../bridge/style.css");
 
+
+
+.lite p,.lite h1,.lite h2,.lite h3{
+	color: #fff;
+}
+
+.arrow-links {
+	text-transform: uppercase;
+	background-color: inherit;
+	color: #999999;
+	animation: all 0.4s;
+	-webkit-animation: all 0.4s;
+	padding-left: 0;
+	display: block;
+}
+.arrow-links:hover {
+	text-transform: uppercase;
+    background-color: inherit;
+	color: #99c700;
+}
+.arrow-links:after {
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 300;
+	font-size: 24px;
+	content: '\f33b';
+	position: absolute;
+	top: 50%;	
+	margin-left: 16px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+

@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/sanctuarysystem/public_html/
-    - /bin/rsync -a test.txt $DEPLOYPATH 
+    - /bin/cp -R * $DEPLOYPATH 

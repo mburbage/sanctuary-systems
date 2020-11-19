@@ -44,3 +44,7 @@ Template: bridge
 	-o-transform: translateY(-50%);
 }
 
+.dark:not(.sticky):not(.scrolled) nav.main_menu ul li a span.underline_dash{
+    background-color: #99c700 !important;
+}
+

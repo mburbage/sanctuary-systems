@@ -588,7 +588,7 @@
 
 
 					header.sticky .header_bottom{
-			background-color: rgba(255,255,255,1) !important;
+			background-color: rgba(255,255,255,0.8) !important;
 			}
 		
 		
@@ -902,7 +902,29 @@
 				.select2-drop{
 				color: #73706a;
 				}
-									
+										a, p a{
+			color: #006837;												}
+
+							h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,
+				.q_icon_with_title .icon_with_title_link,
+				.blog_holder article .post_description a:hover,
+				.blog_holder.masonry article .post_info a:hover,
+				.breadcrumb .current,
+				.breadcrumb a:hover,
+				.portfolio_social_holder a:hover,
+				.latest_post_inner .post_infos a:hover{
+				color: #006837;
+				}
+										a:hover,p a:hover,
+			h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,
+			.q_tabs .tabs-nav li a:hover,
+			.q_icon_with_title .icon_with_title_link:hover,
+			.blog_holder article .post_description a:hover,
+			.blog_holder.masonry article .post_info a:hover,
+			.portfolio_social_holder a:hover,
+			.latest_post_inner .post_infos a:hover{
+			color: #00a552;						}
+		
 
 		
 				

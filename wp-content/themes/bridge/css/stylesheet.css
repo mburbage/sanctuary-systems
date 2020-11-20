@@ -9,7 +9,7 @@
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  /* 1 */
+  /* 1 */ 
   display: table;
   /* 2 */
 }
@@ -3084,7 +3084,7 @@ div.video_section {
 
 .boxed .section .section_inner,
 .grid_section .section_inner {
-  width: 1100px;
+  width: 1200px;
   margin: 0px auto;
   position: relative;
   z-index: 20;
@@ -3110,7 +3110,7 @@ div.video_section {
   .qode_grid_1400.boxed nav.content_menu.fixed,
   .qode_grid_1400 .qode_elementor_container_inner,
   .qode_grid_1400 .elementor-row .elementor-widget-wrap > .qode_elementor_container_inner {
-    width: 1400px;
+    width: 1200px;
   }
   body.qode_grid_1400.boxed .wrapper_inner,
   body.qode_grid_1400.boxed .footer_inner,
@@ -3140,7 +3140,7 @@ div.video_section {
   .qode_grid_1300.boxed nav.content_menu.fixed,
   .qode_grid_1300 .qode_elementor_container_inner,
   .qode_grid_1300 .elementor-row .elementor-widget-wrap > .qode_elementor_container_inner {
-    width: 1300px;
+    width: 1200px;
   }
   body.qode_grid_1300.boxed .wrapper_inner,
   body.qode_grid_1300.boxed .footer_inner,
@@ -21763,8 +21763,8 @@ nav.content_menu .nav_select_menu ul li a i {
 /******** Visual Composer - Start ********/
 .section_inner_margin,
 .parallax_section_inner_margin {
-  margin-left: -15px;
-  margin-right: -15px;
+  /* margin-left: -15px;
+  margin-right: -15px; */
 }
 
 /******** Visual Composer - End ********/

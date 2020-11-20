@@ -116,7 +116,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  body.boxed .wrapper_inner,
+  /* body.boxed .wrapper_inner,
   body.boxed footer,
   body.boxed .header_inner,
   body.boxed .full_width .parallax_content,
@@ -295,10 +295,10 @@
   }
   .frame_holder.frame_holder4 .wpb_flexslider.flexslider.have_frame {
     width: 797px;
-  }
+  } */
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
   .tstm_block_1 {
     width: 50%;
   }
@@ -328,7 +328,7 @@
   }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .qode_pricing_tables.four_columns .price_in_table .price {
     font-size: 60px;
   }
@@ -337,7 +337,7 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
   .light:not(.sticky):not(.scrolled) .side_menu_button > a,
   .light.header_style_on_scroll .side_menu_button > a {
     color: #fff;
@@ -389,7 +389,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1023px) {
   body.boxed .wrapper_inner,
   body.boxed footer,
   body.boxed .header_inner,
@@ -1234,7 +1234,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .grid2 .blog_holder.masonry .blog_share {
     margin-left: 0;
   }
@@ -1247,7 +1247,7 @@
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   .full_screen_holder {
     margin-top: -50px;
   }
@@ -1284,7 +1284,7 @@
   }
 }
 
-@media only screen and (max-width: 783px) {
+@media only screen and (max-width: 768px) {
   .full_width .q_masonry_blog article {
     width: 46.5%;
   }
@@ -2571,7 +2571,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .full_width .projects_masonry_holder .portfolio_masonry_item.large_height a.portfolio_link_for_touch {
     display: block;
     height: 100%;
@@ -3030,7 +3030,7 @@
   /*Audio player widget additional - end*/
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
   body.boxed .wrapper_inner,
   body.boxed footer,
   body.boxed .header_inner,
@@ -3055,7 +3055,7 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 480px) {
   .container_inner,
   .boxed div.section .section_inner,
   div.grid_section .section_inner,

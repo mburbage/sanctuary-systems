@@ -24,7 +24,7 @@ class BridgeQodeIconsFontLinea implements iIconCollection {
 		$this->param = $param;
 		$this->setIconsArray();
 		$this->setBackToTopIconsArray();
-		$this->styleUrl = QODE_ROOT . "/css/linea-icons/style.css";
+		$this->styleUrl = QODE_ROOT . "/css/linea-icons/style.min.css";
 	}
 
 	public function setIconsArray() {

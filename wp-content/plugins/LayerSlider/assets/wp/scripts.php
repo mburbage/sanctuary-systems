@@ -129,7 +129,7 @@ function layerslider_enqueue_content_res() {
 	wp_register_script('layerslider-utils', LS_ROOT_URL.'/static/layerslider/js/layerslider.utils.js', array('jquery'), LS_PLUGIN_VERSION, $footer );
 	wp_register_script('layerslider', LS_ROOT_URL.'/static/layerslider/js/layerslider.kreaturamedia.jquery.js', array('jquery'), LS_PLUGIN_VERSION, $footer );
 	wp_register_script('layerslider-transitions', LS_ROOT_URL.'/static/layerslider/js/layerslider.transitions.js', false, LS_PLUGIN_VERSION, $footer );
-	wp_enqueue_style('layerslider', LS_ROOT_URL.'/static/layerslider/css/layerslider.css', false, LS_PLUGIN_VERSION );
+	wp_enqueue_style('layerslider', LS_ROOT_URL.'/static/layerslider/css/layerslider.min.css', false, LS_PLUGIN_VERSION );
 
 	// LayerSlider Origami plugin
 	wp_register_script('layerslider-origami', LS_ROOT_URL.'/static/layerslider/plugins/origami/layerslider.origami.js', array('jquery'), LS_PLUGIN_VERSION, $footer );
@@ -395,7 +395,7 @@ function layerslider_enqueue_admin_res() {
 			wp_enqueue_style('ls-font-awesome-latest', LS_ROOT_URL.'/static/font-awesome-latest/css/all.min.css', false, LS_PLUGIN_VERSION );
 
 			wp_enqueue_script('layerslider', LS_ROOT_URL.'/static/layerslider/js/layerslider.kreaturamedia.jquery.js', array('jquery'), LS_PLUGIN_VERSION );
-			wp_enqueue_style('layerslider', LS_ROOT_URL.'/static/layerslider/css/layerslider.css', false, LS_PLUGIN_VERSION );
+			wp_enqueue_style('layerslider', LS_ROOT_URL.'/static/layerslider/css/layerslider.min.css', false, LS_PLUGIN_VERSION );
 
 		// Slider & Transition Builder
 		} else {
@@ -425,7 +425,7 @@ function ls_require_builder_assets() {
 	wp_enqueue_script('layerslider', LS_ROOT_URL.'/static/layerslider/js/layerslider.kreaturamedia.jquery.js', array('jquery'), LS_PLUGIN_VERSION );
 	wp_enqueue_script('layerslider-transitions', LS_ROOT_URL.'/static/layerslider/js/layerslider.transitions.js', false, LS_PLUGIN_VERSION );
 	wp_enqueue_script('layerslider-tr-gallery', LS_ROOT_URL.'/static/admin/js/layerslider.transition.gallery.js', array('jquery'), LS_PLUGIN_VERSION );
-	wp_enqueue_style('layerslider', LS_ROOT_URL.'/static/layerslider/css/layerslider.css', false, LS_PLUGIN_VERSION );
+	wp_enqueue_style('layerslider', LS_ROOT_URL.'/static/layerslider/css/layerslider.min.css', false, LS_PLUGIN_VERSION );
 	wp_enqueue_style('layerslider-tr-gallery', LS_ROOT_URL.'/static/admin/css/layerslider.transitiongallery.css', false, LS_PLUGIN_VERSION );
 
 	// LayerSlider Timeline plugin

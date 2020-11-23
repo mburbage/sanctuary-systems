@@ -3,7 +3,7 @@
 if(!function_exists('bridge_qode_child_theme_enqueue_scripts')) {
 
 	Function bridge_qode_child_theme_enqueue_scripts() {
-		wp_register_style('bridge-childstyle', get_stylesheet_directory_uri() . '/style.css');
+		wp_register_style('bridge-childstyle', get_stylesheet_directory_uri() . '/style.min.css');
 		wp_enqueue_style('bridge-childstyle');
 		wp_register_style('bridge-childstyle-fa-core', get_stylesheet_directory_uri() . '/font-awesome-5-pro/css/fontawesome.min.css');
 		wp_enqueue_style('bridge-childstyle-fa-core');

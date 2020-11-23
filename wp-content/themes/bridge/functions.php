@@ -32,8 +32,8 @@ if (!function_exists('bridge_qode_styles')) {
         //load styles before style dynamic because they are overriden with custom styles, qode-news for ex.
         do_action('bridge_qode_action_add_styles_before_style_dynamic');
 
-        if (file_exists(dirname(__FILE__) . "/css/style_dynamic.css") && bridge_qode_is_css_folder_writable() && !is_multisite()) {
-            wp_enqueue_style("bridge-style-dynamic", QODE_ROOT . "/css/style_dynamic.css", array(), filemtime(dirname(__FILE__) . "/css/style_dynamic.css"));
+        if (file_exists(dirname(__FILE__) . "/css/style_dynamic.min.css") && bridge_qode_is_css_folder_writable() && !is_multisite()) {
+            wp_enqueue_style("bridge-style-dynamic", QODE_ROOT . "/css/style_dynamic.min.css", array(), filemtime(dirname(__FILE__) . "/css/style_dynamic.min.css"));
         } else if (file_exists(QODE_ROOT_DIR . '/css/style_dynamic_ms_id_' . bridge_qode_get_multisite_blog_id() . '.css') && bridge_qode_is_css_folder_writable() && is_multisite()) {
             wp_enqueue_style('bridge-style-dynamic', QODE_ROOT . '/css/style_dynamic_ms_id_' . bridge_qode_get_multisite_blog_id() . '.css', array(), filemtime(QODE_ROOT_DIR . '/css/style_dynamic_ms_id_' . bridge_qode_get_multisite_blog_id() . '.css')); //it must be included after woocommerce styles so it can override it
         } else {
@@ -279,44 +279,44 @@ if (!function_exists('bridge_qode_scripts')) {
         wp_enqueue_script("modernizr", QODE_ROOT."/js/plugins/modernizr.min.js",array('jquery'),false,true);
         wp_enqueue_script("appear", QODE_ROOT."/js/plugins/jquery.appear.js",array('jquery'),false,true);
         wp_enqueue_script("hoverIntent");
-        wp_enqueue_script("counter", QODE_ROOT."/js/plugins/counter.js",array('jquery'),false,true);
-        wp_enqueue_script("easyPieChart", QODE_ROOT."/js/plugins/easypiechart.js",array('jquery'),false,true);
+        // wp_enqueue_script("counter", QODE_ROOT."/js/plugins/counter.js",array('jquery'),false,true);
+        // wp_enqueue_script("easyPieChart", QODE_ROOT."/js/plugins/easypiechart.js",array('jquery'),false,true);
         wp_enqueue_script("mixItUp", QODE_ROOT."/js/plugins/mixitup.js",array('jquery'),false,true);
-        wp_enqueue_script("prettyphoto", QODE_ROOT."/js/plugins/jquery.prettyPhoto.js",array('jquery'),false,true);
+        // wp_enqueue_script("prettyphoto", QODE_ROOT."/js/plugins/jquery.prettyPhoto.js",array('jquery'),false,true);
         wp_enqueue_script("fitvids", QODE_ROOT."/js/plugins/jquery.fitvids.js",array('jquery'),false,true);
         wp_enqueue_script("flexslider", QODE_ROOT."/js/plugins/jquery.flexslider-min.js",array('jquery'),false,true);
         wp_enqueue_script('wp-mediaelement');
         wp_enqueue_script("infiniteScroll", QODE_ROOT."/js/plugins/infinitescroll.min.js",array('jquery'),false,true);
-        wp_enqueue_script("waitforimages", QODE_ROOT."/js/plugins/jquery.waitforimages.js",array('jquery'),false,true);
+        // wp_enqueue_script("waitforimages", QODE_ROOT."/js/plugins/jquery.waitforimages.js",array('jquery'),false,true);
         wp_enqueue_script("jquery-form");
-        wp_enqueue_script("waypoints", QODE_ROOT."/js/plugins/waypoints.min.js",array('jquery'),false,true);
-        wp_enqueue_script("jplayer", QODE_ROOT."/js/plugins/jplayer.min.js",array('jquery'),false,true);
-        wp_enqueue_script("bootstrapCarousel", QODE_ROOT."/js/plugins/bootstrap.carousel.js",array('jquery'),false,true);
-        wp_enqueue_script("skrollr", QODE_ROOT."/js/plugins/skrollr.js",array('jquery'),false,true);
-        wp_enqueue_script("charts", QODE_ROOT."/js/plugins/Chart.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("waypoints", QODE_ROOT."/js/plugins/waypoints.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("jplayer", QODE_ROOT."/js/plugins/jplayer.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("bootstrapCarousel", QODE_ROOT."/js/plugins/bootstrap.carousel.js",array('jquery'),false,true);
+        // wp_enqueue_script("skrollr", QODE_ROOT."/js/plugins/skrollr.js",array('jquery'),false,true);
+        // wp_enqueue_script("charts", QODE_ROOT."/js/plugins/Chart.min.js",array('jquery'),false,true);
         wp_enqueue_script("easing", QODE_ROOT."/js/plugins/jquery.easing.1.3.js",array('jquery'),false,true);
-        wp_enqueue_script("abstractBaseClass", QODE_ROOT."/js/plugins/abstractBaseClass.js",array('jquery'),false,true);
-        wp_enqueue_script("countdown", QODE_ROOT."/js/plugins/jquery.countdown.js",array('jquery'),false,true);
-        wp_enqueue_script("multiscroll", QODE_ROOT."/js/plugins/jquery.multiscroll.min.js",array('jquery'),false,true);
-        wp_enqueue_script("justifiedGallery", QODE_ROOT."/js/plugins/jquery.justifiedGallery.min.js",array('jquery'),false,true);
-        wp_enqueue_script("bigtext", QODE_ROOT."/js/plugins/bigtext.js",array('jquery'),false,true);
-        wp_enqueue_script("stickyKit", QODE_ROOT."/js/plugins/jquery.sticky-kit.min.js",array('jquery'),false,true);
-        wp_enqueue_script("owlCarousel", QODE_ROOT."/js/plugins/owl.carousel.min.js",array('jquery'),false,true);
-        wp_enqueue_script("typed", QODE_ROOT."/js/plugins/typed.js",array('jquery'),false,true);
+        // wp_enqueue_script("abstractBaseClass", QODE_ROOT."/js/plugins/abstractBaseClass.js",array('jquery'),false,true);
+        // wp_enqueue_script("countdown", QODE_ROOT."/js/plugins/jquery.countdown.js",array('jquery'),false,true);
+        // wp_enqueue_script("multiscroll", QODE_ROOT."/js/plugins/jquery.multiscroll.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("justifiedGallery", QODE_ROOT."/js/plugins/jquery.justifiedGallery.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("bigtext", QODE_ROOT."/js/plugins/bigtext.js",array('jquery'),false,true);
+        // wp_enqueue_script("stickyKit", QODE_ROOT."/js/plugins/jquery.sticky-kit.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("owlCarousel", QODE_ROOT."/js/plugins/owl.carousel.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("typed", QODE_ROOT."/js/plugins/typed.js",array('jquery'),false,true);
 
-        wp_enqueue_script("carouFredSel", QODE_ROOT."/js/plugins/jquery.carouFredSel-6.2.1.min.js",array('jquery'),false,true);
-        wp_enqueue_script("lemmonSlider", QODE_ROOT."/js/plugins/lemmon-slider.min.js",array('jquery'),false,true);
-        wp_enqueue_script("one_page_scroll", QODE_ROOT."/js/plugins/jquery.fullPage.min.js",array('jquery'),false,true);
-        wp_enqueue_script("mousewheel", QODE_ROOT."/js/plugins/jquery.mousewheel.min.js",array('jquery'),false,true);
-        wp_enqueue_script("touchSwipe", QODE_ROOT."/js/plugins/jquery.touchSwipe.min.js",array('jquery'),false,true);
-        wp_enqueue_script("isotope", QODE_ROOT."/js/plugins/jquery.isotope.min.js",array('jquery'),false,true);
-        wp_enqueue_script("packery", QODE_ROOT."/js/plugins/packery-mode.pkgd.min.js",array('jquery'),false,true);
-        wp_enqueue_script("stretch", QODE_ROOT."/js/plugins/jquery.stretch.js",array('jquery'),false,true);
-        wp_enqueue_script("imagesLoaded", QODE_ROOT."/js/plugins/imagesloaded.js",array('jquery'),false,true);
-        wp_enqueue_script("rangeSlider", QODE_ROOT."/js/plugins/rangeslider.min.js",array('jquery'),false,true);
-        wp_enqueue_script("eventMove", QODE_ROOT."/js/plugins/jquery.event.move.js",array('jquery'),false,true);
-        wp_enqueue_script("twentytwenty", QODE_ROOT."/js/plugins/jquery.twentytwenty.js",array('jquery'),false,true);
-        wp_enqueue_script("swiper", QODE_ROOT."/js/plugins/swiper.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("carouFredSel", QODE_ROOT."/js/plugins/jquery.carouFredSel-6.2.1.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("lemmonSlider", QODE_ROOT."/js/plugins/lemmon-slider.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("one_page_scroll", QODE_ROOT."/js/plugins/jquery.fullPage.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("mousewheel", QODE_ROOT."/js/plugins/jquery.mousewheel.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("touchSwipe", QODE_ROOT."/js/plugins/jquery.touchSwipe.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("isotope", QODE_ROOT."/js/plugins/jquery.isotope.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("packery", QODE_ROOT."/js/plugins/packery-mode.pkgd.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("stretch", QODE_ROOT."/js/plugins/jquery.stretch.js",array('jquery'),false,true);
+        // wp_enqueue_script("imagesLoaded", QODE_ROOT."/js/plugins/imagesloaded.js",array('jquery'),false,true);
+        // wp_enqueue_script("rangeSlider", QODE_ROOT."/js/plugins/rangeslider.min.js",array('jquery'),false,true);
+        // wp_enqueue_script("eventMove", QODE_ROOT."/js/plugins/jquery.event.move.js",array('jquery'),false,true);
+        // wp_enqueue_script("twentytwenty", QODE_ROOT."/js/plugins/jquery.twentytwenty.js",array('jquery'),false,true);
+        // wp_enqueue_script("swiper", QODE_ROOT."/js/plugins/swiper.min.js",array('jquery'),false,true);
 
         $mac_os   = strpos( getenv( "HTTP_USER_AGENT" ), 'Mac' );
         if($smooth_scroll && $mac_os == false){

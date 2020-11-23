@@ -65,7 +65,7 @@ function wpcf7_script_is() {
 
 function wpcf7_enqueue_styles() {
 	wp_enqueue_style( 'contact-form-7',
-		wpcf7_plugin_url( 'includes/css/styles.css' ),
+		wpcf7_plugin_url( 'includes/css/styles.min.css' ),
 		array(), WPCF7_VERSION, 'all' );
 
 	if ( wpcf7_is_rtl() ) {

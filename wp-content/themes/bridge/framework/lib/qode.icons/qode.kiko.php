@@ -24,7 +24,7 @@ class BridgeQodeIconsFontKiko implements iIconCollection {
         $this->backTopTopIcons = array();
         $this->setIconsArray();
         $this->setBackToTopIconsArray();
-        $this->styleUrl = QODE_ROOT . '/css/kiko/kiko-all.css';
+        $this->styleUrl = QODE_ROOT . '/css/kiko/kiko-all.min.css';
     }
 
     public function setIconsArray() {

@@ -27,7 +27,7 @@ class BridgeQodeIconsFontDripicons implements iIconCollection
         $this->param = $param;
         $this->setIconsArray();
 		$this->setBackToTopIconsArray();
-        $this->styleUrl = QODE_ROOT . "/css/dripicons/dripicons.css";
+        $this->styleUrl = QODE_ROOT . "/css/dripicons/dripicons.min.css";
     }
 
     public function setIconsArray()
